@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Frontend Mentor | QR code component</title>
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        background-color: hsl(212, 45%, 89%);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        font-family: "outfit";
+      }
+      .qr-container {
+        background-color: #fff;
+        padding: 1rem;
+        border-radius: 1rem;
+        overflow: hidden;
+        align-self: center;
+        max-width: 20rem;
+      }
+
+      .qr-img {
+        max-width: 100%;
+        border-radius: 1rem;
+      }
+      .qr-content {
+        display: flex;
+        flex-direction: column;
+        /* gap: 2rem; */
+        text-align: center;
+        align-items: center;
+      }
+      .qr-title {
+        font-size: 1.5rem;
+        font-weight: 700;
+        margin: 2rem 0;
+        color: hsl(218, 44%, 22%);
+      }
+      .qr-description {
+        color: hsl(220, 15%, 55%);
+        margin-bottom: 2rem;
+        padding: 0 0.9rem;
+        font-weight: 400;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="qr-container">
+      <div class="qr-content">
+        <img class="qr-img" src="images/image-qr-code.png" alt="qr-code" />
+        <p class="qr-title">
+          Improve your front-end skills by building projects
+        </p>
+        <p class="qr-description">
+          Scan the QR code to visit Frontend Mentor and take your coding skills
+          to the next level
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
